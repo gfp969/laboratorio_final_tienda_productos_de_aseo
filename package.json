@@ -1,0 +1,18 @@
+{
+  "name": "laboratorio_final",
+  "version": "1.0.0",
+  "main": "app/index.js",
+  "scripts": {
+    "dev": "nodemon --exec node app/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
