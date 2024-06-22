@@ -1,81 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="pagina.js" defer></script>
-    <script src="carrito.js"></script>
+    <script src="pagina.js"></script>
     <title>Tienda</title>
 </head>
+
 <body>
     <header>
-        <h1>Productos de aseo</h1>
+        <h1>Tienda de productos de aseo</h1>
     </header>
     <main>
         <br>
-        <div class="grid_container">
-            <div class="products">
-                <h2>Detergente</h2>
-                <img src="https://res.cloudinary.com/walmart-labs/image/upload/w_960,dpr_auto,f_auto,q_auto:best/gr/images/product-images/img_large/00003700008886L.jpg" alt="">
-                <br>
-                <p>$ 5.000</p>
-                <input class="botonescomprar" type="submit" value="Comprar">
-                <br>
-                <br>
-                <input class="botonescarrito" type="submit" value="Agregar al carrito">
+        <section class="grid_container">
+            <div class="container_products">
+                <div class="products">
+                    <span>Detergente</span>
+                    <img src="detergente.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$5.000</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span>Detergente en polvo</span>
+                    <img src="detergente_en_polvo.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$6.000</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span>Blanqueador</span>
+                    <img src="blanqueador.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$4.500</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span>Limpia vidrios</span>
+                    <img src="limpia_vidrios.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$7.800</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span>Jabon liquido</span>
+                    <img src="jabon_liquido.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$9.200</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span>Servilletas</span>
+                    <img src="servilletas.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$3.500</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
             </div>
-            <div class="products">
-                <h2>Jabon en polvo</h2>
-                <img src="https://insumiaseo.com/wp-content/uploads/2022/10/b3cdbdb2-d565-426f-b5f3-47860cf4e74e.jpg" alt="">
-                <br>
-                <p>$ 6.000</p>
-                <input class="botonescomprar" type="submit" value="Comprar">
-                <br>
-                <br>
-                <input class="botonescarrito" type="submit" value="Agregar al carrito">
-            </div>
-            <div class="products">
-                <h2>Blanqueador</h2>
-                <img src="https://tiendasisimo.com/wp-content/uploads/2023/10/464-blanqueador-2000-ml-tiendasisimo.jpg" alt="">
-                <br>
-                <p>$ 4.500</p>
-                <input class="botonescomprar" type="submit" value="Comprar">
-                <br>
-                <br>
-                <input class="botonescarrito" type="submit" value="Agregar al carrito">
-            </div>
-            <div class="products">
-                <h2>Limpia vidrios</h2>
-                <img src="https://www.kipclin.com/images/virtuemart/product/KIP-PQP-LIMPV00004.jpg" alt="">
-                <br>
-                <p>$ 10.000</p>
-                <input class="botonescomprar" type="submit" value="Comprar">
-                <br>
-                <br>
-                <input class="botonescarrito" type="submit" value="Agregar al carrito">
-            </div>
-            <div class="products">
-                <h2>Jabon liquido</h2>
-                <img src="https://berhlan.com/wp-content/uploads/2021/05/3133.jpg" alt="">
-                <br>
-                <p>$ 11.000</p>
-                <input class="botonescomprar" type="submit" value="Comprar">
-                <br>
-                <br>
-                <input class="botonescarrito" type="submit" value="Agregar al carrito">
-            </div>
-            <div class="products">
-                <h2>Servilletas</h2>
-                <img src="https://vaquitaexpress.com.co/media/catalog/product/cache/e89ece728e3939ca368b457071d3c0be/7/7/7708700168084_28.jpg" alt="">
-                <br>
-                <p>$ 6.700</p>
-                <input class="botonescomprar" type="submit" value="Comprar">
-                <br>
-                <br>
-                <input class="botonescarrito" type="submit" value="Agregar al carrito">
-            </div>
-        </div>
+        </section>
     </main>
     <footer>
         <P>
@@ -83,4 +62,5 @@
         </P>
     </footer>
 </body>
+
 </html>

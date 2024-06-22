@@ -8,6 +8,7 @@ console.log("servidor esuchando en puerto",app.get("port"));
 
 //configuraciones
 app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/img"));
 
 //rutas
 app.get("/",(req,res)=>res.sendFile(__dirname + "/pages/index.html"));
