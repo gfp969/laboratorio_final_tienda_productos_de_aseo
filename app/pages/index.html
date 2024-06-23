@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <script src="pagina.js"></script>
     <title>Tienda</title>
@@ -15,43 +18,104 @@
     </header>
     <main>
         <br>
+        <!-- tarjetas de productos -->
         <section class="grid_container">
             <div class="container_products">
                 <div class="products">
-                    <span>Detergente</span>
+                    <span class="titulo_product">Detergente</span>
                     <img src="detergente.jpg" alt="" class="imgproduct">
                     <span class="precioproduct">$5.000</span>
                     <button class="botonproduct">agregar al carrito</button>
                 </div>
                 <div class="products">
-                    <span>Detergente en polvo</span>
+                    <span class="titulo_product">Detergente en polvo</span>
                     <img src="detergente_en_polvo.jpg" alt="" class="imgproduct">
                     <span class="precioproduct">$6.000</span>
                     <button class="botonproduct">agregar al carrito</button>
                 </div>
                 <div class="products">
-                    <span>Blanqueador</span>
+                    <span class="titulo_product">Blanqueador</span>
                     <img src="blanqueador.jpg" alt="" class="imgproduct">
                     <span class="precioproduct">$4.500</span>
                     <button class="botonproduct">agregar al carrito</button>
                 </div>
                 <div class="products">
-                    <span>Limpia vidrios</span>
+                    <span class="titulo_product">Limpia vidrios</span>
                     <img src="limpia_vidrios.jpg" alt="" class="imgproduct">
                     <span class="precioproduct">$7.800</span>
                     <button class="botonproduct">agregar al carrito</button>
                 </div>
                 <div class="products">
-                    <span>Jabon liquido</span>
+                    <span class="titulo_product">Jabon liquido</span>
                     <img src="jabon_liquido.jpg" alt="" class="imgproduct">
                     <span class="precioproduct">$9.200</span>
                     <button class="botonproduct">agregar al carrito</button>
                 </div>
                 <div class="products">
-                    <span>Servilletas</span>
+                    <span class="titulo_product">Servilletas</span>
                     <img src="servilletas.jpg" alt="" class="imgproduct">
                     <span class="precioproduct">$3.500</span>
                     <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span class="titulo_product">Ambientador</span>
+                    <img src="ambientador.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$15.000</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+                <div class="products">
+                    <span class="titulo_product">Guantes</span>
+                    <img src="guantes_negros.jpg" alt="" class="imgproduct">
+                    <span class="precioproduct">$7.500</span>
+                    <button class="botonproduct">agregar al carrito</button>
+                </div>
+            </div>
+
+            <!-- carrito -->
+            <div class="carritogeneral">
+                <div class="titulocarrito">
+                    <h2>Tu carrito de compras</h2>
+                </div>
+                <div class="carritoproducts">
+                    <div class="carritoproduct">
+                        <img src="detergente.jpg" alt="" width="80px">
+                        <div class="carrito-descripcion-detalles">
+                            <span class="carrito-titulo">Detergente</span>
+                            <div class="seleccionar-cantidad">
+                                <i class="fa-solid fa-minus menos-cantidad"></i>
+                                <input type="text" value="1" class="carrito-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-product-precio">$5000</span>
+                        </div>
+                        <span class="eliminar-product">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+
+                    <div class="carritoproduct">
+                        <img src="detergente_en_polvo.jpg" alt="" width="80px">
+                        <div class="carrito-descripcion-detalles">
+                            <span class="carrito-titulo">Detergente en polvo</span>
+                            <div class="seleccionar-cantidad">
+                                <i class="fa-solid fa-minus menos-cantidad"></i>
+                                <input type="text" value="2" class="carrito-cantidad" disabled>
+                                <i class="fa-solid fa-plus sumar-cantidad"></i>
+                            </div>
+                            <span class="carrito-product-precio">$6000</span>
+                        </div>
+                        <span class="eliminar-product">
+                            <i class="fa-solid fa-trash"></i>
+                        </span>
+                    </div>
+
+                    <div class="carrito-total">
+                        <div class="fila">
+                            <strong>Precio final:</strong>
+                            <span class="carrito-total-final">$17000</span>
+                        </div>
+                        <button class="pagar-products">Pagar <i class="fa-solid fa-bag-shopping"></i></button>
+                    </div>
                 </div>
             </div>
         </section>
