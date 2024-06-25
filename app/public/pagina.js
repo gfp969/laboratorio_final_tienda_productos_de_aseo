@@ -7,7 +7,7 @@ if (document.readyState == 'loading') {
 }
 
 function ready() {
-    let botoneliminar = document.getElementsByClassName('eliminar-product')
+    let botoneliminar = document.getElementsByClassName('eliminar-product');
     for (i = 0; i < botoneliminar.length; i++) {
         let boton = botoneliminar[i];
         boton.addEventListener('click', eliminarproductocarrito)
@@ -34,7 +34,7 @@ function ready() {
     document.getElementsByClassName('pagar-products')[0].addEventListener('click', pagarPorFin)
 }
 
-function pagarPorFin(event){
+function pagarPorFin(){
     alert("Gracias por su compra");
 
     let carritoproductos = document.getElementsByClassName('carritoproducts')[0];
@@ -59,7 +59,7 @@ function agregarProductCarrito(event) {
 
 function agregarProductAlCarrito(titulo, precio, imagen) {
     let item = document.createElement('div');
-    item.classList.add = 'item';
+    item.classList.add = ('item');
     let itemscarrito = document.getElementsByClassName('carritoproducts')[0];
 
     let nombresProducts = itemscarrito.getElementsByClassName('carrito-titulo');
@@ -126,7 +126,7 @@ function restarCantidad(event) {
 
 function eliminarproductocarrito(event) {
     let botonclick = event.target;
-    botonclick.parentElement.remove();
+    botonclick.parentElement.parentElement.remove();
 
     actualizarpreciofinal();
     ocultarcarrito();
